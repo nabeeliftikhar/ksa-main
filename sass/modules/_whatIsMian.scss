@@ -1,0 +1,94 @@
+.what-is-main {
+    .section-subtitle,
+    .section-title {
+        text-align: left;
+        margin: initial;
+
+        @include media-breakpoint-down(sm) {
+            max-width: 100%;
+            text-align: center;
+        }
+    }
+
+    .section-title {
+        @include media-breakpoint-down(sm) {
+            font-size: rem(28);
+            line-height: rem(34);
+        }
+    }
+
+    &__counter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: rem(56);
+        margin-top: rem(56);
+
+        @include media-breakpoint-up(sm) {
+            justify-content: flex-start;
+            flex-direction: row;
+        }
+
+        &__item {
+            text-align: center;
+
+            &:not(:last-child) {
+                margin-bottom: rem(32);
+
+                @include media-breakpoint-up(sm) {
+                    margin-right: rem(16);
+                    margin-bottom: 0;
+                }
+            }
+
+            @include media-breakpoint-up(sm) {
+                text-align: left;
+            }
+
+            &__number {
+                line-height: rem(102);
+                margin-bottom: rem(24);
+                @include fonts($fountain-blue, rem(96), $secondary-font, $semi-bold);
+            }
+
+            &__text {
+                font-size: rem(18);
+                line-height: rem(21);
+                margin-bottom: 0;
+
+                @include media-breakpoint-up(sm) {
+                    max-width: rem(170);
+                }
+            }
+        }
+    }
+
+    &__app {
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        &__item {
+            &:not(:last-child) {
+                margin-right: rem(24);
+            }
+        }
+
+        &__link {
+            color: $dodger-blue;
+            font-size: rem(18);
+            line-height: rem(30);
+        }
+
+        &__available-text {
+            font-size: rem(14);
+
+            @include media-breakpoint-down(sm) {
+                font-size: rem(16);
+                text-align: center;
+            }
+        }
+    }
+}

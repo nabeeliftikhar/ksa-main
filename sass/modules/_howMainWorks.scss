@@ -1,0 +1,46 @@
+.how-main-works {
+    background: linear-gradient(180deg, #F1FBFA 0%, rgba(241, 251, 250, 0) 100%);
+    border-radius: rem(16);
+    position: relative;
+
+    &__section-title {
+        @include media-breakpoint-up(lg) {
+            margin-bottom: rem(67);
+        }
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+    &__icon {
+        margin-bottom: rem(35);
+    }
+
+    &__desc {
+        color: #6A6A6A;
+        font-size: rem(24);
+        line-height: rem(35);
+    }
+
+    &__dots {
+        position: absolute;
+        top: 20%;
+        display: none;
+
+        @include media-breakpoint-up(lg) {
+            display: block;
+        }
+
+
+        &-first {
+            top: 47%;
+            left: 30%;
+        }
+
+        &-second {
+            top: 47%;
+            right: 30%;
+        }
+    }
+}

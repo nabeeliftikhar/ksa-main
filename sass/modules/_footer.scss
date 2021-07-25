@@ -1,0 +1,103 @@
+.global-footer {
+    background: #F1FBFA;
+
+    &__top {
+        padding: rem(52) 0;
+    }
+
+    &__logo {
+        margin-bottom: rem(24);
+
+        img {
+            min-width: rem(180);
+        }
+    }
+
+    &__social {
+        margin-bottom: rem(26);
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 0;
+        }
+
+        p {
+            color: #6D6C6C;
+            font-size: rem(18);
+            line-height: rem(35);
+            margin-bottom: rem(24);
+        }
+
+        &__list {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 0;
+
+            li {
+                display: inline-block;
+
+                &:not(:last-child) {
+                    margin-right: rem(17);
+                    margin-bottom: rem(17);
+                }
+            }
+        }
+    }
+
+    &__links {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+
+        @include media-breakpoint-up(lg) {
+            margin-top: rem(40);
+        }
+
+        li {
+            &:not(:last-child) {
+                margin-bottom: rem(12);
+            }
+
+            &:last-child {
+                margin-bottom: rem(12);
+
+                @include media-breakpoint-up(lg) {
+                    margin-bottom: 0;
+                }
+            }
+
+            a {
+                color: #073D55;
+                font-size: rem(18);
+                line-height: rem(21);
+            }
+        }
+    }
+
+    &__app-text {
+        color: #6D6C6C;
+        font-size: rem(18);
+        line-height: rem(30);
+        margin-bottom: rem(24);
+        margin-top: rem(26);
+
+        @include media-breakpoint-up(lg) {
+            margin-top: rem(38);
+        }
+    }
+
+    &__bototm {
+        border-top: rem(1) solid #B9D8D4;
+        padding-bottom: rem(16);
+        padding-top: rem(16);
+    }
+
+    &__copyrights {
+        p {
+            color: #6D6C6C;
+            font-size: rem(14);
+            line-height: rem(35);
+            margin-bottom: 0;
+            text-align: center;
+        }
+    }
+}

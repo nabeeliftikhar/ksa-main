@@ -1,0 +1,31 @@
+.subheader {
+    &__text {
+        .subheader {
+            &__content {
+                padding-bottom: rem(10);
+                padding-top: rem(20);
+                @include media-breakpoint-up(sm) {
+                    padding-bottom: rem(60);
+                    padding-top: rem(120);
+                }
+            }
+            &-slogan {
+                @include fonts($fountain-blue, rem(18), $priamry-font, $medium);
+                line-height: rem(40);
+                text-transform: uppercase;
+                @include media-breakpoint-up(sm) {
+                    font-size: rem(24);
+                    line-height: rem(77);
+                }
+            }
+            &-title {
+                @include fonts($base-secondary, rem(32), $secondary-font, $semi-bold);
+                line-height: rem(38);
+                @include media-breakpoint-up(sm) {
+                    font-size: rem(55);
+                    line-height: rem(62px);
+                }
+            }
+        }
+    }
+}

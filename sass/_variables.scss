@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+//GLOBAL FONT FAMILY
+$priamry-font: 'Roboto', sans-serif;
+$secondary-font: 'Poppins', sans-serif;
+$arabic-font: 'DINNextLTArabic-Regular';
+
+//GLOBAL FONT WEIGHT
+$ultra-light: 100 !default;
+$light: 300 !default;
+$regular: 400 !default;
+$medium: 500 !default;
+$semi-bold: 600 !default;
+$bold: 700 !default;
+$extra-bold: 800 !default;
+$bolder: 900 !default;
+
+//GLOBAL COLOR VARIABLES
+$white: #FFFFFF !default;
+$black: #000000 !default;
+$base-primary: #1F201F !default;
+$base-secondary: #073D55 !default;
+$fountain-blue: #54C1AF !default;
+$gray-color: #4B4B4B;
+$aqua-haze: #ECF4F3 !default;
+$dodger-blue: #33A9FF !default;
+$border-color: #B9D8D4 !default;
+$base-gradient: linear-gradient(180deg, #F1FBFA 0%, rgba(241, 251, 250, 0) 100%);
+$aqua-spring: #F4FCFB !default;
+$dove-gray: #6B6B6B !default;
+$input-border-color: #C4D1D6 !default;

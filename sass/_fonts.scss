@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'DINNextLTArabic-UltraLight';
+    src: url('../fonts/arabic/DINNextLTArabic-UltraLight.ttf') format('truetype');
+    font-weight: $ultra-light;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINNextLTArabic-Light';
+    src: url('../fonts/arabic/DINNextLTArabic-Light.ttf') format('truetype');
+    font-weight: $light;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINNextLTArabic-Regular';
+    src: url('../fonts/arabic/DINNextLTArabic-Regular.ttf') format('truetype');
+    font-weight: $regular;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINNextLTArabic-Medium';
+    src: url('../fonts/arabic/DINNextLTArabic-Medium.ttf') format('truetype');
+    font-weight: $medium;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINNextLTArabic-Bold';
+    src: url('../fonts/arabic/DINNextLTArabic-Bold.ttf') format('truetype');
+    font-weight: $bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINNextLTArabic-Heavy';
+    src: url('../fonts/arabic/DINNextLTArabic-Heavy.ttf') format('truetype');
+    font-weight: $extra-bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINNextLTArabic-Black';
+    src: url('../fonts/arabic/DINNextLTArabic-Black.ttf') format('truetype');
+    font-weight: $bolder;
+    font-style: normal;
+}

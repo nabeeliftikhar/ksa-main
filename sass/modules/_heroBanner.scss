@@ -1,0 +1,124 @@
+.hero-banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: rem(500);
+    position: relative;
+    border-radius: rem(16);
+
+    &.hero-banner--small {
+        min-height: rem(300);
+        margin-bottom: rem(30);
+
+        @include media-breakpoint-up(lg) {
+            min-height: rem(500);
+            margin-bottom: rem(80);
+        }
+    }
+
+    &.safety-banner-image {
+        background-image: url('../images/safety-banner.png');
+    }
+
+    &.about-us-banner-image {
+        background-image: url('../images/about-us-banner.png');
+    }
+
+    &.our-story-banner-image {
+        background-image: url('../images/our-story-banner.png');
+    }
+
+    &.our-standard-banner-image {
+        background-image: url('../images/our-standards-banner.png');
+    }
+
+    @include media-breakpoint-down(xs) {
+        background-position: center;
+    }
+
+    @include media-breakpoint-up(lg) {
+        min-height: rem(770);
+    }
+
+    &__overlay {
+        border-radius: rem(16);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(90deg, rgba($black, 0.2), transparent);
+        z-index: 1;
+    }
+
+    &.home-banner-image {
+        background-image: url('../images/homeBanner.jpg');
+
+        .hero-banner__overlay {
+            background: linear-gradient(180deg, rgba($base-secondary, 0) 0%, rgba(3, 24, 33, 0.93) 100%);
+            
+        }
+    }
+
+    &__content {
+        padding: rem(20);
+        max-width: rem(400);
+        width: 100%;
+        position: absolute;
+        z-index: 2;
+
+        @include media-breakpoint-up(lg) {
+            padding: rem(60) rem(50);
+            max-width: rem(600);
+        }
+
+        &.top-left {
+            top: 0;
+            left: 0;
+        }
+
+        &.top-center {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &.top-right {
+            top: 0;
+            right: 0;
+        }
+
+        &.center-left {
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+
+        &.center {
+            @include align-center;
+        }
+
+        &.center-right {
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+
+        &.bottom-left {
+            bottom: 0;
+            left: 0;
+        }
+
+        &.bottom-center {
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &.bottom-right {
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
